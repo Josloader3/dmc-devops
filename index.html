@@ -3,29 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DMC DevOps</title>
+    <title>DMC DevOps – Página Actualizada</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; background-color: #f5f5f5; }
-        h1 { color: #2c3e50; }
-        h2 { color: #34495e; }
-        ul { list-style-type: disc; margin-left: 20px; }
-        .container { max-width: 800px; margin: 0 auto; padding: 20px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        footer { margin-top: 40px; font-size: 0.9em; color: #777777; text-align: center; }
+        body { font-family: 'Segoe UI', sans-serif; margin:0; padding:0; background-color:#f5f5f5; color:#2c3e50; }
+        header { background-color:#34495e; color:#fff; padding:20px; text-align:center; }
+        section { padding:40px; margin:20px auto; max-width:900px; background-color:#fff; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1); }
+        .hero { text-align:center; }
+        .hero img { max-width:100%; height:auto; border-radius:8px; }
+        .hero h2 { margin-top:20px; font-size:2em; color:#2c3e50; }
+        .hero p { font-size:1.2em; }
+        .features { margin-top:30px; }
+        .features ul { list-style: disc; margin-left:20px; }
+        .update { margin-top:30px; }
+        footer { text-align:center; padding:20px; margin-top:40px; font-size:0.8em; color:#777; }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>DMC DevOps</h1>
-        <h2>Repositorio de Práctica DevOps</h2>
-        <p>Este repositorio contiene ejercicios para el curso de DevOps.</p>
+        <p>Repositorio de Práctica DevOps – Página Actualizada</p>
+    </header>
+    <section class="hero">
+        <img src="images/devops-banner.png" alt="DevOps Banner">
+        <h2>Novedades</h2>
+        <p>¡Bienvenido! Esta versión del sitio demuestra cómo GitHub Pages despliega correctamente los cambios realizados en la rama principal. Hemos añadido nuevas secciones y mejorado el estilo para que puedas ver fácilmente que el sitio se actualiza.</p>
+    </section>
+    <section class="features">
+        <h2>Características del Proyecto</h2>
         <ul>
-            <li>Contribución realizada a través de un pull request</li>
+            <li>Integración continua con GitHub Actions y Super‑Linter</li>
+            <li>Despliegue automático a GitHub Pages</li>
+            <li>Validación de Markdown y otros lenguajes</li>
+            <li>Estructura de documentación mejorada</li>
         </ul>
-        <p><strong>ACTUALIZACIÓN URGENTE:</strong> Todos los sistemas operativos.</p>
-        <p>Esta es una corrección para el bug DG-13.</p>
-        <footer>
-            <p>&copy; 2026 DMC DevOps. Todos los derechos reservados.</p>
-        </footer>
-    </div>
+    </section>
+    <section class="update">
+        <h2>Última actualización</h2>
+        <p>Última actualización: 10 de enero de 2026.</p>
+        <p>Si estás viendo esta fecha, significa que GitHub Pages ha desplegado correctamente la última versión de los archivos de este repositorio.</p>
+    </section>
+    <footer>
+        &copy; 2026 DMC DevOps – Todos los derechos reservados.
+    </footer>
 </body>
 </html>
