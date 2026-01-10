@@ -1,0 +1,23 @@
+name: Super-Linter
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  super-linter:
+    name: Run Super-Linter
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run super-linter
+        uses: github/super-linter@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BRANCH: main
+          VALIDATE_MARKDOWN: true
+          VALIDATE_PYTHON: true
+          # Añade aquí otras variables de configuración si las necesitas
+          # FILTER_REGEX_EXCLUDE: ''
